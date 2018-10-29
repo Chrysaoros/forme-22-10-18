@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme</title>
+
+    <style>
+        .inputDiv {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Registracija naloga</h1>
+    <p>Molimo popunite polja kako bi ste registrovali Vas naog</p>
+
+    <form>
+        <label>
+        Ime:<br/>
+        <input type="text" name="ime" required minlength="2" placeholder="Vase ime"><br/>
+        <br/>
+
+        Prezime:<br/>
+        <input type="text" name="prezime" required minlength="2"><br/>
+        <br/>
+
+        Lozinka:<br/>
+        <input type="password" name="lozinka" required minlength="3" maxlength="10"><br/>
+        <br/>
+
+        Email:<br/>
+        <input type="text" name="email" required size="16"><br/>
+        <br/>
+
+        Godine starosti:<br/>
+        <input type="number" name="godine" min="16" max="145" size=""><br/>
+        <br/>
+
+        Vasa slika:<br/>
+        <input type="file" name="slika" disabled><br/>
+        <br/>
+    <div class="inputDiv">
+        
+        <div>
+        Pol:<br/>
+        <br/>
+        <input type="radio" name="pol" value="zenski" checked>Zenski<br/>
+        <input type="radio" name="pol" value="muski">Muski<br/>
+        <input type="radio" name="pol" value="nedefinisan">Nisam siguran<br/>
+        <br/>
+        </div>
+
+        <div>
+        Vozacka dozvola:<br/>
+        <br/>
+        <input type="checkbox" value="A">A kategorija<br/>
+        <input type="checkbox" value="B">B kategorija<br/>
+        <input type="checkbox" value="C" checked>C kategorija<br/>
+        <input type="checkbox" value="D">D kategorija<br/>
+        <br/>
+        </div>
+    </div>
+
+        <div>
+            Ocekivana plata:<br/>
+            <br/>
+          <span>100e</span>  <input type="range" name="plata" min="100"  max="1000"><span>1000e</span><br/>
+          <br/>
+          <br/>
+        </div>
+
+        <div>
+            Radno vreme:<br/>
+            <br/>
+            <input type="time" name="radno_vreme"/><input type="time" name="srecno_vreme"><br/>
+            <br/>
+        </div>
+
+        <div>
+            <br/>
+            <br/>
+            Izaberite boju:<input type="color" name="boja" value="black"><br/>
+            <br/>
+        </div>
+
+        <div>
+            Datum rodjenja:<br/>
+            <input type="date" name="rodjendan"><br/>
+            <br>
+        </div>
+
+        <div>
+            Search:<br/>
+            <input type="search" name="pretraga" autocomplete="on"><br/>
+            <br/>
+        </div>
+
+        <div>
+        Pohvale/Primedbe:<br/>
+        <br/>
+        <textarea name="komentari" placeholder="Input text here..."></textarea>
+        </div>
+<br/>
+        <input type="submit" value="Posalji"> <input type="reset" value="Obrisi"><br/>
+        </label>
+    </form>
+</body>
+</html>
